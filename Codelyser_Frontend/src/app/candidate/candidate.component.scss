@@ -1,0 +1,32 @@
+.flex-container {
+  display: flex;
+  // background: linear-gradient(to right,#20201f, #1a1a2c);
+  // background: linear-gradient(to right,#9e9999, #636060,#888282);
+  // background-color: rgb(255, 255, 255);
+  // background-color: rgb(17, 5, 37);.
+  background-color: #272738;
+
+}
+body
+{
+  background-color: #272738;
+}
+
+.flex-item {
+  flex: 1;
+  // margin: 4px;
+  
+}
+.container{
+  height: 100vh;
+}
+
+
+
+#live{
+  // width: 290px;
+  padding: 5px;
+  padding-top: 2.3px;
+  margin-right: 10px;
+  // height: 100vh;
+}

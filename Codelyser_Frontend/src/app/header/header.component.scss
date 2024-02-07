@@ -1,0 +1,70 @@
+ 
+.spacer {
+  flex: 1 ;
+}
+.codelyser
+{
+  color: #a29e9e;
+}
+
+mat-toolbar {
+// background: linear-gradient(to right,rgb(44, 40, 64), rgb(66, 51, 101), rgb(128, 63, 154),rgb(13, 13, 126), rgb(82, 17, 147),rgb(24, 19, 33));
+// background-color: #054bb4,#2e5caf,#01427a,#01b3ef,#55c360;
+background-color: rgb(16, 8, 51);
+  height: 50px;
+  // position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+ .submit-button {
+  margin-left: 10px;
+  background-color: rgb(226, 42, 42);
+  color: rgb(0, 0, 0);
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: rgb(138, 0, 0); /* Change the background color on hover */
+  color: white;
+}
+  
+
+.codelyser_logo {
+  width: 180px; /* Set the desired width of the logo */
+ height: 45px; /* Maintain aspect ratio */
+ margin-right: 10px; /* Adjust margin as needed */
+ margin-top: 2px;
+ margin-bottom: 2px;
+}
+
+  .logo {
+    
+     width: 40px; /* Set the desired width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Adjust margin as needed */
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 50%;
+  }
+
+  .timer{
+    color: white;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 10px;
+  // background: linear-gradient(to right,#e65d22, #1316ce); /* Set the desired gradient for the text */
+  // -webkit-background-clip: text;
+  // background-clip: text;
+  // color: transparent; 
+}
+}

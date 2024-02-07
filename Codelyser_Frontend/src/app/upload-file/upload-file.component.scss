@@ -1,0 +1,149 @@
+mat-toolbar {
+  background-color: rgb(56, 43, 114);
+  height: 50px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .codelyser_logo {
+    width: 200px; /* Set the desired width of the logo */
+    height: 60px; /* Maintain aspect ratio */
+    margin-right: 10px; /* Adjust margin as needed */
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .main-heading{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  button {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #0E9D9D;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: #057575;
+    }
+  }
+}
+
+.container {
+  background-color: rgb(217, 246, 249);
+  text-align: center;
+  min-height: 300px;
+  position: absolute;
+  left: 50%;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 15px;
+  top: 50%;
+  min-width: 450px;
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(157, 224, 255, 0.806); /* Add box shadow */
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.1); /* Grow by 10% on hover */
+  }
+  .heading {
+    color: rgb(57, 59, 150);
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .styled-input,
+  .file-upload {
+    width: 300px;
+    height: 40px;
+    padding: 15px;
+    box-sizing: border-box;
+    // border: 1px solid #ccc;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+.styled-input.styled-input:click{
+  border: none;
+}
+  .file-upload {
+    background-color: rgb(48, 183, 245);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    margin: 0 auto;
+    &:hover {
+      background-color: rgb(18, 144, 202);
+    }
+    span {
+      margin-top: 0; /* Adjust margin-top to center text */
+    }
+    .choose-file {
+      opacity: 0; /* Make the actual file input invisible */
+      position: absolute;
+      cursor: pointer;
+      // width: 100%;
+      // height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+  .styled-button {
+    display: block;
+    background-color: #0E9D9D;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: #057575;
+    }
+  }
+}
+.styled-progress {
+  margin: 0 auto;
+  width: 20%;
+  margin-top: 10px;
+.snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+  &.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+}
+}

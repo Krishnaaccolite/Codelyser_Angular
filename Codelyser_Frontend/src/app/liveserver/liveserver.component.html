@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="livephoto" *ngIf="livephoto">
+        <img class="livePhoto" src="../../assets/run_pointer.jpg" alt="">
+        <h2>Click on Run button to start the server</h2>
+      </div>
+    <div class="ring" *ngIf="livegif">Loading
+        <span></span>
+      </div>
+
+    <div class="error" *ngIf="errorflag">
+        <p class="error-message">{{error}}</p>
+    </div>
+    
+    <div *ngIf="portflag" class="liveserver">
+        <iframe id="myIframe" width="100%" height="400" [src]="port"></iframe>
+    </div>
+    </div>

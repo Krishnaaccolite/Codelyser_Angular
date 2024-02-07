@@ -1,0 +1,48 @@
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+<div class="container">
+  <div class="console">
+    <div class="console-header">
+      <div class="btn">
+        <!-- <div class="button" id="console" (click)="toggleConsole()">
+          Console
+        </div> -->
+        <div class="button" id="test" (click)="toggleTestCases()">
+          Test Cases
+        </div>
+      </div>
+      <div class="toggle-icon" (click)="toggleHeaderVisibility()">
+          {{ isConsoleOpen || isTestCasesOpen ? '▼' : '▲' }}
+        </div>
+    </div>
+    <div class="content-container">
+      <div class="console-content" *ngIf="isConsoleOpen">
+        <!-- Console content goes here -->
+        <div class="content">Console Content</div>
+      </div>
+      <div class="test-cases-content" *ngIf="isTestCasesOpen">
+        <!-- Test cases content goes here -->
+        <div class="content">
+          <script src="https://kit.fontawesome.com/befd05abb3.js" crossorigin="anonymous"></script>
+          <p class="heading"> Test Cases</p>
+          <div class="test-case-container">
+            
+            <div class="grid-container">
+              <div *ngFor="let item of testkeyValuePairs | keyvalue; let i = index">
+                <div class="grid-item" [ngClass]="{'even-row': i % 3 === 0, 'odd-row': i % 3 !== 0}">
+                  <span class="mark-sign" *ngIf="item.value">
+                    <i class="fas fa-check" style="color: green;"></i>
+                  </span>
+                  <span class="mark-sign" *ngIf="!item.value">
+                    <i class="fas fa-times" style="color: red;"></i>
+                  </span>
+                  {{ item.key }}
+                </div>
+              </div>
+            </div>      
+          </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>

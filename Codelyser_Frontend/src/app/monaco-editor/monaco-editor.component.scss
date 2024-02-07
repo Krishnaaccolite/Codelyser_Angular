@@ -1,0 +1,114 @@
+.outer{
+  // border: 2px;
+  // border-color: #FFFFFF;
+  margin-top: 1px;
+  background-color: #272738;
+}
+.monaco-editor-container {
+  width: 100%;
+  height: 100%;
+}
+.editor-container {
+  flex: 1;
+  // color: black;
+  // border: 1px solid #A29E9E;
+  border-radius: 0.25rem;
+  margin-top: 1px;
+  height: 650px;
+  width: 600px;
+  // max-width: 1000px;
+}
+.monaco-editor .view-lines .monaco-mouse-cursor-text{
+  font-size: 25px !important;
+}
+// .buttons {
+//   // margin-top: auto;
+//   display: flex;
+//   justify-content: flex-end;
+//   padding: 10px;
+// }
+button {
+  margin-top: 9px;
+  margin-right: 3px;
+margin-left: 10px; /* Add some spacing between buttons */
+background-color: white;
+color: rgb(0, 0, 0);
+margin-bottom: 1px;
+margin-top: 2.5px;
+padding: 8px 12px; /* Add padding for a visually appealing button */
+border: none; /* Remove button border */
+border-radius: 4px; /* Optional: Add border-radius for rounded corners */
+cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.theme{
+  height:50px ;
+  background-color: rgb(29, 28, 28);
+  color: white;
+  padding-bottom: 2px;
+  // margin-top: 15px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dark-theme {
+  background-color: #A29E9E ; /* Set the background color for the dark theme */
+  color: black;
+}
+.toggletheme:hover{
+  background-color: #A29E9E; /* Set the background color for the dark theme */
+  color: black;
+}
+// #theme-button
+// {
+//   border-radius: 4px;
+//   background: #A29E9E;
+//   width: 100px;
+//   height: 30px;
+//   // padding: 5px;
+//   margin: 2px;
+//   // margin-left: 0px;
+//   // padding-left: 10px;
+//   cursor: pointer;
+//   transition: background-color 0.3s ease;
+// }
+// #theme-button:hover{
+//   background-color: white;
+// }
+// .material-icons{
+//   width: 50px;
+// }
+.filename{
+  padding: 20px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  font-size: 14px;
+  color: #A29E9E;
+}
+.runsave
+{
+  height: 40px;
+
+  margin-top: 6px;
+   color: white;
+  background-color: #044A10;;
+ transition: background-color 0.3s ease;
+}
+.toggletheme
+{
+  height: 37px;
+}
+.runsave:hover{
+  background-color: #009118;
+  color: white;
+}
+
+.close-button {
+  cursor: pointer;
+  margin-right: 2px; 
+}
+
+
+
+

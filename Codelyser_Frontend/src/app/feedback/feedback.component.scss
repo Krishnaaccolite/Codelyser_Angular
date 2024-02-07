@@ -1,0 +1,75 @@
+/* Add these styles to your existing styles file */
+
+.result-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .feedback-container {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-container h3 {
+    color: #2196F3;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .rating-input {
+    display: flex;
+    gap: 5px;
+    justify-content: center; /* Center the rating inputs */
+  }
+  
+  .rating-input {
+    span {
+      cursor: pointer;
+      color: #ccc; /* Default star color */
+      font-size: 24px; /* Adjust the font size as needed */
+  
+      &.active {
+        color: yellow; /* Active/star selected color */
+      }
+    }
+  }
+  
+  .rating-input label {
+    background-color: #ddd;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .rating-input input:checked + label {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .submit-button {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit-button:hover {
+    background-color: #1565C0; /* Darker shade on hover */
+  }
+  

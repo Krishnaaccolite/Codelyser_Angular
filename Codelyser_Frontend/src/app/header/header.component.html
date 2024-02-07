@@ -1,0 +1,15 @@
+
+<mat-toolbar color="primary">
+  <!-- Add your company logo or image -->
+<!-- <img src="/assets/logo.jpeg" alt="Company Logo" class="logo"> -->
+
+ <img class="codelyser_logo" src="https://i.ibb.co/MpVfQCx/logofinal.png" alt="">
+   
+<!-- Spacer to push buttons to the right -->
+ <span class="spacer"></span>
+ <div>
+  <p class="timer">Time Left: {{ formatTimer() }}</p>
+</div>
+<!-- Indrani -->
+<button mat-button color="accent" class="submit-button" (click)="openConfirmationDialog()">Submit</button>
+</mat-toolbar>

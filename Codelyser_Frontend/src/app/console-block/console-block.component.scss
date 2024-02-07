@@ -1,0 +1,110 @@
+.container {
+    position: relative;
+  }
+  .console {
+    width: 99.7%;
+    border: 1px solid #CED4DA;
+    border-radius: 0.25rem;
+    margin-top: 3.5px;
+    padding: 0;
+    transition: transform 0.3s ease-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transform: translateY(-104%);
+  }
+  .console.open {
+    transform: translateY(0);
+  }
+  .console-header {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    padding-bottom: 0px;
+    background-color: #272738;
+    color: white;
+  }
+  .button {
+    cursor: pointer;
+  }
+  .content-container {
+    overflow: hidden;
+  }
+  .console-content,
+  .test-cases-content {
+    padding: 8px;
+    overflow-y: auto;
+  }
+  .toggle-icon {
+    cursor: pointer;
+  }
+  .btn {
+    display: flex;
+    gap: 10px;
+  }
+  .test-case-item {
+    background-color: black;
+    border: 1px solid black;
+    padding: 8px;
+    margin: 10px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    .mark-sign {
+      margin-right: 8px;
+    }
+    &.is-correct {
+      color: green;
+    }
+    &:not(.is-correct) {
+      color: red;
+    }
+  }
+  .heading{
+    text-align: center;
+    color: black;
+  //   background: linear-gradient(to right,#E65D22, #181A94); /* Set the desired gradient for the text */
+  //   -webkit-background-clip: text;
+  //   background-clip: text;
+  //   color: transparent;
+  }
+  footer {
+    background-color: white;
+    // background: linear-gradient(to right, black, grey);
+    // background: linear-gradient(to right,#6E645D, #18194F);
+    padding: 10px;
+    width: 200px;
+    height: 90px;
+  .test-case-container {
+      display: flex; /* Change from grid to flex */
+      gap: 40px;
+      // margin: 2px;
+      align-items: center;
+      // background: linear-gradient(to right, black, grey);
+      overflow-x: auto; /* Add overflow-x to enable horizontal scrolling if needed */
+    }
+    .item
+    {
+      color:black;
+    }
+  }
+  p{
+    color: black;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Adjust the gap between grid items */
+  }
+  
+  .grid-item {
+    border: 1px solid #ddd; /* Add a border for each grid item */
+    padding: 10px; /* Add padding for each grid item */
+  }
+  
+  .even-row {
+    background-color: #f2f2f2; /* Style even rows differently */
+  }
+  

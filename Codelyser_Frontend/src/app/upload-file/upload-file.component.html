@@ -1,0 +1,28 @@
+
+<mat-toolbar color="primary">
+  <img class="codelyser_logo" src="https://i.ibb.co/MpVfQCx/logofinal.png" alt="">
+  <h1 class="main-heading">Admin Panel</h1>
+  <button mat-button routerLink="/allocate-question" class="styled-button">Allocate Question</button>
+</mat-toolbar>
+
+<div class="container">
+  <h1 class="heading">Upload Question</h1>
+  <input type="text" placeholder="Enter Question Name" #questionname class="styled-input" />
+  <!-- <textarea placeholder="Enter Question" id="question" rows="5" cols="50" #questionname></textarea> -->
+  <!-- <input type="file" (change)="onFileSelected($event)" /> -->
+  <label class="file-upload">
+    <span>{{ selectedFileName || 'Choose File' }}</span>
+    <input type="file" (change)="onFileSelected($event)" class="choose-file" />
+  </label>
+  <button (click)="uploadFile()" class="styled-button">Upload</button>
+</div>
+
+
+
+
+
+
+
+
+
+

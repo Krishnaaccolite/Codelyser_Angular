@@ -1,0 +1,7 @@
+<router-outlet *ngIf="isUploadRoute()"></router-outlet>
+<!-- <app-login *ngIf="!isUploadRoute()"></app-login> -->
+<app-login *ngIf="isLoginRoute()"></app-login>
+<app-candidate *ngIf="isUserTestRoute()"></app-candidate>
+<router-outlet *ngIf="isAllocateQuestion()"></router-outlet>
+<!-- <app-feedbackheader *ngIf="feedbackService.showRouterOutlet"></app-feedbackheader> -->
+<router-outlet *ngIf="feedbackService.showRouterOutlet"></router-outlet>

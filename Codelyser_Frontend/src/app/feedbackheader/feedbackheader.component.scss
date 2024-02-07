@@ -1,0 +1,37 @@
+ 
+.spacer {
+    flex: 1 ;
+  }
+  
+mat-toolbar {
+   height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+   // margin-bottom: -110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    .logo {
+       width: 40px; /* Set the desired width of the logo */
+      height: auto; /* Maintain aspect ratio */
+      margin-right: 10px; /* Adjust margin as needed */
+      margin-top: 2px;
+      margin-bottom: 2px;
+      border-radius: 50%;
+      //height: 100%;
+    }
+  
+    button {
+      margin-left: 10px; /* Add margin between navigation buttons */
+      border: none;
+      background-color: no;
+    }
+
+    span{
+      font-weight: 500;
+      align-items: center;
+    }
+  }
+  

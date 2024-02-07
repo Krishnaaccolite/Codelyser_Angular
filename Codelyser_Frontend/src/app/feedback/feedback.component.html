@@ -1,0 +1,32 @@
+<app-feedbackheader></app-feedbackheader>
+<div class="result-container">
+    <h2>Thank You!</h2>
+    <p>Your test has been submitted successfully.</p>
+  
+    <!-- Display feedback form -->
+    <div class="feedback-container">
+      <h3>Feedback</h3>
+  
+      <form (submit)="submitFeedback()">
+        <!-- Rating -->
+        <div class="rating-input">
+          <!-- Use ngFor to generate star inputs dynamically -->
+          <span *ngFor="let star of stars" [class.active]="star <= selectedRating" (click)="updateRating(star)">
+            ★ <!-- Unicode character for a black star (you can replace it with &#9733; if you prefer) -->
+          </span>
+        </div>
+  
+        <!-- Comments -->
+        <div class="form-group">
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments" [(ngModel)]="feedbackComments"></textarea>
+        </div>
+  
+        <!-- Submit button -->
+        <div class="form-group">
+          <button type="submit" class="submit-button">Submit Feedback</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  

@@ -1,0 +1,44 @@
+/* confirmation-dialog.component.scss */
+
+/* Styles for the dialog title */
+h2.mat-dialog-title {
+    color: #2196F3; /* Title text color */
+    font-size: 20px; /* Title font size */
+  }
+  
+  /* Styles for the dialog content */
+  mat-dialog-content {
+    color: #333; /* Content text color */
+  }
+  
+  /* Styles for the dialog actions (buttons) */
+  mat-dialog-actions {
+    justify-content: flex-end; /* Align buttons to the right */
+  }
+  
+  /* Style for the "No" button */
+  mat-dialog-actions button:first-child {
+    margin-right: 8px; /* Add space between buttons */
+  }
+  
+  /* Style for the "Yes" button */
+  mat-dialog-actions button:last-child {
+    background-color: #2196F3; /* Background color for the "Yes" button */
+    color: white; /* Text color for the "Yes" button */
+    margin-left: 8px; /* Add space between buttons */
+  }
+
+
+  .btn
+  {
+    margin-left: 10px; /* Add some spacing between buttons */
+    background-color: #a29e9e; /* Set a sophisticated blue color */
+  color: rgb(0, 0, 0); /* Set text color to white for better contrast */
+  padding: 8px 12px; /* Add padding for a visually appealing button */
+  border: none; /* Remove button border */
+  border-radius: 4px; /* Optional: Add border-radius for rounded corners */
+  cursor: pointer; /* Add cursor pointer for better UX */
+    /* Add any other styles you want for the buttons */
+  }
+
+  

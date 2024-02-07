@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+  <app-header></app-header>
+    <div class="flex-container">
+      <div class="flex-item" id="explorer" >
+        <app-candidate-file-explorer></app-candidate-file-explorer>
+      </div>
+      <div class="flex-item">
+        <app-monaco-editor></app-monaco-editor>
+      </div>
+      <div class="flex-item" id="live">
+        <app-liveserver></app-liveserver>
+        <app-console-block></app-console-block>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+    <img class="codelyser_logo" src="https://i.ibb.co/MpVfQCx/logofinal.png" alt="">
+    <h1 class="main-heading">Admin Panel</h1>
+    <button mat-button routerLink="/upload-file">Upload Question</button>
+  </mat-toolbar>
+  <div class="container">
+      <h1 class="heading">Allocate Question</h1>
+    <div class="input-container">
+      <input type="number" [(ngModel)]="userId" class="styled-input" placeholder="Enter User Id" />
+      <input type="number" [(ngModel)]="questionId" class="styled-input"  placeholder="Enter Question Id"/>
+    </div>
+      <button (click)="assignQuestionToUser()" class="styled-button">Assign Question</button>
+    </div>

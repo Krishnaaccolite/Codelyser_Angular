@@ -1,0 +1,111 @@
+.example-tree-invisible {
+  display: none;
+}
+.explorer {
+  width: 270px;
+  // height: 700px;
+}
+.project {
+  text-align: center;
+  // padding-left: 30px;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: white;
+  font-weight: 200;
+}
+.project:hover{
+  color: #A29E9E;
+}
+.example-tree {
+  margin-top: 10px;
+  overflow-y: auto;
+  max-height: 495px;
+  background-color:#272738;
+}
+.example-tree .mat-tree-node {
+  font-size: 16px; // Adjust the font size as needed
+  padding: px;    // Adjust the padding as needed
+  margin: 0;       // Remove any margin
+  cursor: pointer;
+  color: white;
+  font-weight: 200;
+  &:hover {
+    color: #A29E9E;
+  }
+}
+.mat-tree-node {
+  font-size: 5px;
+  padding: 3px;
+  --mat-tree-node-min-height: 20px; /* Adjust the value to your preference */
+}
+.mat-icon-rtl-mirror {
+  font-size: 15px;
+  color: white;
+  &:hover {
+    color: #A29E9E;
+  }
+}
+.example-tree .mat-nested-tree-node div[role=group] {
+  padding-left: 8px;
+}
+.example-tree div[role=group] > .mat-tree-node {
+  padding-left: 22px;
+}
+.btn {
+  background-color: #272738;
+  border: none;
+  height: 15px;
+  width: 42px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+// Adjustments for a more compact layout
+// .mat-tree-node,
+// .mat-nested-tree-node {
+//   size: 4px;  margin: 0;
+// }
+.mat-tree-node div[role=group] > .mat-tree-node {
+  padding-left: 15px;
+}
+.mat-tree-node div[role=group] > .mat-nested-tree-node {
+  padding-left: 35px;
+}
+.file-icon{
+  size: 3px;
+  font-size: 12px;
+  margin-top: 8px;
+}
+.mat-icon{
+  height: 20px;
+  width: 15px;
+}
+.editable-icon {
+  size: 3px;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: auto;
+}
+.lock-icon {
+  size: 3px;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-left: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #F1F1F1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

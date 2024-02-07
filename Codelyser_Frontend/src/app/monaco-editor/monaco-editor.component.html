@@ -1,0 +1,44 @@
+<!-- <div #editorContainer class="editor-container"></div>
+<div class="buttons">
+    <button (click)="runCode()">Run</button>
+    <button (click)="runTests()">Run tests</button>
+    <button>Save</button>
+</div> -->
+
+
+
+<div class="outer">
+    <!-- Add this line to include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    
+        <div class="theme">
+            <div class="tab-name">
+                <span class="filename">{{ selectedNodeName }}</span>
+                <!-- <span *ngIf="selectedNodeName" class="close-button" (click)="clearEditor()">
+                    X 
+                </span> -->
+            </div>
+            <div class="right-content">
+    
+            <!-- <button class="toggletheme" (click)="toggleTheme()">☀</button>
+            <button class="toggletheme"   (click)="toggleFullScreen()" >
+                toggle
+            </button> -->
+    
+            <button class="toggletheme" (click)="toggleTheme()" [ngClass]="{ 'dark-theme': !isDarkTheme }">
+                <i class="fas fa-sun"></i>
+              </button>
+              
+              <!-- Toggle Fullscreen Icon -->
+              <!-- <button class="runsave" (click)="toggleFullScreen()">
+                <i class="fas fa-expand-arrows-alt"></i>
+              </button> -->
+            <button class="runsave" (click)="runCode()">Run</button>
+            <button class="runsave" (click)="runTests()">Run Test</button>
+            <!-- <button class="runsave" >Save</button> -->
+            </div>    
+        </div>
+    
+    
+        <div #editorContainer class="editor-container"></div>
+        </div>    
